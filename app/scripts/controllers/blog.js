@@ -11,7 +11,14 @@ angular.module('corlateApp')
   .controller('BlogCtrl', function($scope) {
 
 	$scope.texto = function(){
-		alert($scope.busqueda);
+		
+		if($scope.busqueda == undefined || $scope.busqueda=='') {
+  		alert('debes escribir algo');
+  		}
+
+  		else{
+  		alert($scope.busqueda);
+  		}
 	}
 
   });
